@@ -3,7 +3,7 @@
 ## npm scripts
 Scripts name | Description
 ------------ | -------------
-serve | Serve the applciation with hot reload
+serve | Serve the application with hot reload
 build | Build the application
 lint | Check if your app pass the eslint config
 test:unit | Check if your unit tests are correct
