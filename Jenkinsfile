@@ -24,6 +24,12 @@ pipeline {
           }
         }
         stage('test:e2e') {
+          agent {
+            docker {
+              image 'cypress/base:8'
+            }
+
+          }
           steps {
             sh 'npm run test:e2e:headless'
           }
