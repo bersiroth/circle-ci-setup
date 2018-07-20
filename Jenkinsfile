@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'npm lint'
+        sh 'npm run lint'
       }
     }
   }
