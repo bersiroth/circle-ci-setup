@@ -31,7 +31,8 @@ pipeline {
 
           }
           steps {
-            sh 'npm run test:e2e:headless'
+            sh 'npm install'
+            sh 'npm run test:e2e:headless	'
           }
         }
       }
