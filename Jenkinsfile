@@ -6,10 +6,14 @@ pipeline {
 
   }
   stages {
+    stage('install') {
+      steps {
+        sh 'npm install'
+      }
+    }
     stage('lint') {
       steps {
-        sh '''npm install
-npm run lint'''
+        sh 'npm run lint'
       }
     }
   }
