@@ -33,6 +33,7 @@ pipeline {
           steps {
             sh 'npm install'
             sh 'npm run test:e2e:headless	'
+            archiveArtifacts 'tests/e2e/videos'
           }
         }
       }
