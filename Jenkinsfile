@@ -11,7 +11,7 @@ pipeline {
         sh 'npm install'
       }
     }
-    stage('lint') {
+    stage('test') {
       parallel {
         stage('lint') {
           steps {
